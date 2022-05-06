@@ -13,9 +13,11 @@
 
 <h2>Here are all the users:</h2>
 
-@foreach ($users as $user)
+<li>None</li>
+<!-- @foreach ($users as $user)
     <li>{{ $user->name }} - {{$user->email}}</li>
 @endforeach
+-->
 
 <br>
 <h2>Add a New User</h2>
