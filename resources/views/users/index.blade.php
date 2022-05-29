@@ -13,10 +13,11 @@
 
 <h2>Here are all the users:</h2>
 
-<li>None</li>
-@foreach ($users as $user)
+@forelse($users as $user)
     <li>{{ $user->name }} - {{$user->email}}</li>
-@endforeach
+@empty
+    <li>None</li>
+@endforelse
 
 <br>
 <h2>Add a New User</h2>
