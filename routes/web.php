@@ -16,4 +16,4 @@ use App\Http\Controllers\UsersController;
 
 Route::get('/', [UsersController::class, 'index']);
 Route::get('users', [UsersController::class, 'index']);
-Route::get('users', [UsersController::class, 'store']);
+Route::post('users', [UsersController::class, 'store']);
